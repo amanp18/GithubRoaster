@@ -55,7 +55,7 @@ export default function App() {
     setRoast("");
 
     try {
-      const response = await fetch(`http://localhost:5000/api/roast?username=${username}&lang=${lang}`, {
+      const response = await fetch(`https://githubroaster.onrender.com/api/roast?username=${username}&lang=${lang}`, {
         method: 'GET',
         headers: {
           "Content-Type": "application/json",
